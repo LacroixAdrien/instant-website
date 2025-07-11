@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <h1 class="text-3xl font-bold text-center mb-10">Nos Services</h1>
+
+  <section class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white rounded-lg shadow p-6 text-center hover:shadow-md transition">
+      <h2 class="text-xl font-semibold text-indigo-600 mb-2">Création de site</h2>
+      <p class="text-gray-600">Sites vitrines modernes, rapides et responsive avec Astro + Tailwind.</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-6 text-center hover:shadow-md transition">
+      <h2 class="text-xl font-semibold text-indigo-600 mb-2">Personnalisation</h2>
+      <p class="text-gray-600">Design sur-mesure, contenu optimisé et sections modulables.</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-6 text-center hover:shadow-md transition">
+      <h2 class="text-xl font-semibold text-indigo-600 mb-2">Hébergement & domaine</h2>
+      <p class="text-gray-600">Déploiement sur Vercel + gestion de nom de domaine personnalisé.</p>
+    </div>
+  </section>
+</BaseLayout>

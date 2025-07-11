@@ -1,10 +1,23 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <BaseLayout>
-  <h1 class="text-4xl font-bold mb-4">Bienvenue sur Instant Website</h1>
-  <p class="text-lg text-gray-700">
-    Créez et gérez vos sites vitrines de façon simple, rapide et professionnelle.
-  </p>
+  <Hero title="Bienvenue sur Instant Website" subtitle="Des sites vitrines rapides, modernes et vendables" />
+
+  <section class="mt-16 grid md:grid-cols-3 gap-6">
+    <div class="bg-white shadow rounded-lg p-6 text-center">
+      <h2 class="text-xl font-bold mb-2">Rapide</h2>
+      <p>Des sites déployés en quelques minutes, sans prise de tête.</p>
+    </div>
+    <div class="bg-white shadow rounded-lg p-6 text-center">
+      <h2 class="text-xl font-bold mb-2">Moderne</h2>
+      <p>Design responsive, Tailwind intégré, structure professionnelle.</p>
+    </div>
+    <div class="bg-white shadow rounded-lg p-6 text-center">
+      <h2 class="text-xl font-bold mb-2">Extensible</h2>
+      <p>Ajoutez facilement Stripe, Calendly, Formspree et +</p>
+    </div>
+  </section>
 </BaseLayout>
