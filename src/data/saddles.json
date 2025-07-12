@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Concept DR",
+    "description": "Monocast, ajustable, parfait pour dressage.",
+    "image": "/images/saddle1.jpg"
+  },
+  {
+    "name": "Concept SJ",
+    "description": "Pour saut, équilibré et léger.",
+    "image": "/images/saddle2.jpg"
+  },
+  {
+    "name": "Eventing Pro",
+    "description": "Robuste, pour cross et endurance.",
+    "image": "/images/saddle3.jpg"
+  }
+]

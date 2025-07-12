@@ -1,23 +1,21 @@
+--- 
+import Layout from '../components/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SaddleCard from '../components/SaddleCard.astro';
+import saddles from '../data/saddles.json';
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/Hero.astro";
----
-
-<BaseLayout>
-  <Hero title="Bienvenue sur Instant Website" subtitle="Des sites vitrines rapides, modernes et vendables" />
-
-  <section class="mt-16 grid md:grid-cols-3 gap-6">
-    <div class="bg-white shadow rounded-lg p-6 text-center">
-      <h2 class="text-xl font-bold mb-2">Rapide</h2>
-      <p>Des sites déployés en quelques minutes, sans prise de tête.</p>
-    </div>
-    <div class="bg-white shadow rounded-lg p-6 text-center">
-      <h2 class="text-xl font-bold mb-2">Moderne</h2>
-      <p>Design responsive, Tailwind intégré, structure professionnelle.</p>
-    </div>
-    <div class="bg-white shadow rounded-lg p-6 text-center">
-      <h2 class="text-xl font-bold mb-2">Extensible</h2>
-      <p>Ajoutez facilement Stripe, Calendly, Formspree et +</p>
+<Layout title="Accueil">
+  <Hero
+    title="Selles artisanales made in Italy"
+    subtitle="Fabrication Valdagno – Cuir taureau haut de gamme"
+    image="/images/hero.jpg"
+    ctaText="Découvrir nos modèles"
+    ctaHref="/saddles"
+  />
+  <section class="container mx-auto py-12">
+    <h2 class="text-2xl font-bold mb-6 text-center">Nos modèles phares</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {saddles.slice(0, 3).map(s => <SaddleCard saddle={s} />)}
     </div>
   </section>
-</BaseLayout>
+</Layout>

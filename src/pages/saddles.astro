@@ -1,0 +1,13 @@
+---
+import Layout from '../components/Layout.astro';
+import SaddleCard from '../components/SaddleCard.astro';
+import saddles from '../data/saddles.json';
+---
+<Layout title="Nos Selles">
+  <section class="container mx-auto py-12">
+    <h1 class="text-3xl font-bold mb-8 text-center">Nos modèles de selles</h1>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {saddles.map(s => <SaddleCard saddle={s} />)}
+    </div>
+  </section>
+</Layout>
